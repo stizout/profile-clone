@@ -1,0 +1,174 @@
+.banner {
+  background-image: url('https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 80vh;
+  width: 100%;
+}
+
+nav {
+  background: transparent;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  top: 0;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.brand {
+  color: white;
+  font-size: 24px;
+}
+
+.menu-button {
+  padding: 10px;
+  background-color: gold;
+  font-size: 20px;
+  color: white;
+}
+
+.menubar ul {
+  display: flex;
+}
+
+.menubar ul li {
+  list-style: none;
+  display: flex;
+  color: white;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.large {
+  display: none;
+}
+
+.drawer {
+  width: 0px;
+  margin-left: -40px;
+  position: fixed;
+  top: 50px;
+  color: white;
+  background-color: black;
+  list-style: none;
+  overflow: hidden;
+  transition: .2s;
+
+}
+
+.drawer li {
+  margin: 5px 0;
+  font-size: 25px;
+}
+
+.drawer li:hover {
+  color: yellow;
+}
+
+.open {
+  width: 800px;
+  display: initial;
+  margin-left: 0px;
+}
+
+.banner-body {
+  margin-top: 10vh;
+  text-align: center;
+}
+
+.banner-body h1 {
+  font-size: 48px;
+  color: white;
+}
+
+.showMeButton {
+  border: none;
+  background-color: gold;
+  font-size: 24px;
+  padding: 25px;
+  color: white;
+}
+
+.services-body {
+  height: 80vh;
+}
+
+.services {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.item {
+  background-color: red;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 33%;
+}
+
+.item p {
+  text-align: center;
+}
+
+.item-pic {
+  width: 150px;
+}
+
+@media (max-width: 999px) {
+  nav {
+    width: 800px;
+  }
+}
+@media (max-width: 800px) {
+  nav {
+    width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    width: 400px;
+  }
+  .services-container {
+    display: block;
+    text-align: center;
+  }
+  .item-pic {
+    width: 80px;
+  }
+  .item {
+    display: block;
+    margin: 0 auto;
+  }
+
+}
+
+@media (min-width: 800px) {
+  .large {
+    display: initial;
+  }
+  .small {
+    display: none;
+  }
+
+  .open {
+    display: none;
+  }
+
+  .drawer {
+    display: none;
+  }
+}
